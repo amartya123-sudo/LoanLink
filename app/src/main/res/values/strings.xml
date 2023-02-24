@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">LoanLink</string>
+    <string name="todo">TODO</string>
+    <string name="login">LOGIN</string>
+    <string name="img3">IMG3</string>
+    <string name="aadhar_number">Aadhar Number</string>
+    <string name="enter_aadhar_number">enter aadhar number</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="enter_mobile_number">enter mobile number</string>
+    <string name="or">or</string>
+    <string name="get_otp">GET OTP</string>
+    <string name="otp">OTP</string>
+    <string name="enter_otp">enter otp</string>
+    <string name="login1">LOGIN</string>
+    <string name="are_you_a_robot">Are you a robot</string>
 </resources>
