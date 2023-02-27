@@ -89,7 +89,20 @@
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingClass,TextSizeCheck" />
 
-    <TextView android:id="@+id/textView3" android:layout_width="139dp" android:layout_height="35dp" android:text="@string/mobile_number" android:textAppearance="@style/TextAppearance.AppCompat.Body2" app:layout_constraintBottom_toBottomOf="@+id/textInputLayout2" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.125" app:layout_constraintStart_toStartOf="@+id/imageView2" app:layout_constraintTop_toTopOf="@+id/imageView2" app:layout_constraintVertical_bias="1.0" tools:ignore="MissingConstraints,UnknownId,VisualLintOverlap" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="139dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="356dp"
+        android:text="@string/mobile_number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints,UnknownId,VisualLintOverlap" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/idEdtPhoneNumber"
@@ -113,10 +126,10 @@
         android:hint="@string/enter_mobile_number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintHorizontal_bias="0.248"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.043"
         tools:ignore="MissingClass,TextSizeCheck" />
 
     <TextView
@@ -140,12 +153,12 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="#FFEB3B"
         android:textColorHint="#FFEB3B"
-        app:layout_constraintBottom_toBottomOf="@+id/idBtnVerify"
+        app:layout_constraintBottom_toBottomOf="@+id/idEdtOtp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.819"
-        app:layout_constraintStart_toEndOf="@+id/idBtnVerify"
-        app:layout_constraintTop_toTopOf="@+id/idBtnVerify"
-        app:layout_constraintVertical_bias="0.571"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toEndOf="@+id/idEdtOtp"
+        app:layout_constraintTop_toTopOf="@+id/idEdtOtp"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="NotSibling" />
 
     <TextView
@@ -156,10 +169,10 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintHorizontal_bias="0.119"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputEditText2"
-        app:layout_constraintVertical_bias="0.223" />
+        app:layout_constraintVertical_bias="0.195" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/idEdtOtp"
@@ -185,15 +198,16 @@
         android:id="@+id/idBtnGetOtp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="96dp"
         android:backgroundTint="#3F51B5"
         android:text="@string/login1"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="#FFEB3B"
         android:textColorHint="#FFEB3B"
-        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout3"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textInputLayout3"
-        app:layout_constraintTop_toTopOf="@+id/textInputLayout3"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toTopOf="@+id/checkBox"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
@@ -206,7 +220,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.154"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/idEdtOtp"
         app:layout_constraintVertical_bias="0.336"
         tools:ignore="UnknownId" />
 </androidx.constraintlayout.widget.ConstraintLayout>
