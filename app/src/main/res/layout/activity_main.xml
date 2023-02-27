@@ -18,7 +18,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/loanphoto2"
         tools:ignore="MissingConstraints,ImageContrastCheck" />
 
@@ -32,7 +32,7 @@
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="TextSizeCheck" />
+        tools:ignore="TextSizeCheck,VisualLintBounds" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -59,7 +59,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.153"
-        tools:ignore="MissingConstraints,TextSizeCheck" />
+        tools:ignore="MissingConstraints,TextSizeCheck,VisualLintBounds" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
@@ -89,22 +89,10 @@
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingClass,TextSizeCheck" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="139dp"
-        android:layout_height="35dp"
-        android:text="@string/mobile_number"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.125"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="MissingConstraints,VisualLintOverlap" />
+    <TextView android:id="@+id/textView3" android:layout_width="139dp" android:layout_height="35dp" android:text="@string/mobile_number" android:textAppearance="@style/TextAppearance.AppCompat.Body2" app:layout_constraintBottom_toBottomOf="@+id/textInputLayout2" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.125" app:layout_constraintStart_toStartOf="@+id/imageView2" app:layout_constraintTop_toTopOf="@+id/imageView2" app:layout_constraintVertical_bias="1.0" tools:ignore="MissingConstraints,UnknownId,VisualLintOverlap" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout2"
+        android:id="@+id/idEdtPhoneNumber"
         android:layout_width="117dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -140,10 +128,11 @@
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputEditText"
+        tools:ignore="VisualLintBounds" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/idBtnVerify"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#3F51B5"
@@ -151,12 +140,13 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="#FFEB3B"
         android:textColorHint="#FFEB3B"
-        app:layout_constraintBottom_toBottomOf="@+id/textInputEditText2"
+        app:layout_constraintBottom_toBottomOf="@+id/idBtnVerify"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.819"
-        app:layout_constraintStart_toEndOf="@+id/textInputLayout2"
-        app:layout_constraintTop_toTopOf="@+id/textInputEditText2"
-        app:layout_constraintVertical_bias="0.571" />
+        app:layout_constraintStart_toEndOf="@+id/idBtnVerify"
+        app:layout_constraintTop_toTopOf="@+id/idBtnVerify"
+        app:layout_constraintVertical_bias="0.571"
+        tools:ignore="NotSibling" />
 
     <TextView
         android:id="@+id/textView5"
@@ -172,7 +162,7 @@
         app:layout_constraintVertical_bias="0.223" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout3"
+        android:id="@+id/idEdtOtp"
         android:layout_width="201dp"
         android:layout_height="47dp"
         android:layout_marginTop="526dp"
@@ -192,7 +182,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/idBtnGetOtp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#3F51B5"
@@ -217,5 +207,6 @@
         app:layout_constraintHorizontal_bias="0.154"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
-        app:layout_constraintVertical_bias="0.336" />
+        app:layout_constraintVertical_bias="0.336"
+        tools:ignore="UnknownId" />
 </androidx.constraintlayout.widget.ConstraintLayout>
