@@ -1,10 +1,10 @@
 package com.project.loanlink;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
-public class User_Registration extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class UserRegistration extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

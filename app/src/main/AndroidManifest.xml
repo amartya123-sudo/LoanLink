@@ -15,7 +15,7 @@
         android:theme="@style/Theme.LoanLink"
         tools:targetApi="31">
         <activity
-            android:name=".User_Registration"
+            android:name=".UserRegistration"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
