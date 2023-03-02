@@ -28,18 +28,20 @@
             android:layout_marginRight="72dp"
             android:layout_marginBottom="16dp"
             android:fontFamily="sans-serif-black"
-            android:text=" Create Account"
+            android:text="@string/create_account"
             android:textAlignment="textEnd"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            tools:ignore="TextSizeCheck" />
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="43dp"
+            android:layout_width="48dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:backgroundTint="#002196F3"
-            android:text="<-" />
+            android:text="@string/left"
+            tools:ignore="TextSizeCheck" />
     </com.google.android.material.navigation.NavigationView>
 
     <com.google.android.material.navigation.NavigationView
@@ -55,10 +57,11 @@
             android:id="@+id/textView12"
             android:layout_width="328dp"
             android:layout_height="16dp"
-            android:layout_marginTop="8px"
+            android:layout_marginTop="8dp"
             android:fontFamily="@font/acme"
-            android:text="Phone Number"
-            android:textSize="14sp" />
+            android:text="@string/phone_number"
+            android:textSize="14sp"
+            tools:ignore="TextSizeCheck" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -68,33 +71,38 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="328dp"
-            android:layout_height="20dp"
+            android:layout_height="48dp"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="6dp"
             android:alpha="0.87"
-            android:hint="enter phone number"
-            android:textColor="#D3FFFFFF" />
+            android:hint="@string/enter_phone_number"
+            android:textColor="#D3FFFFFF"
+            android:textColorHint="#546E7A"
+            tools:ignore="TextContrastCheck" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="320dp"
             android:layout_height="56dp"
             android:layout_marginTop="63dp"
-            android:hint="First Name">
+            android:hint="@string/first_name">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                tools:ignore="TouchTargetSizeCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="328dp"
             android:layout_height="56dp"
             android:layout_marginTop="127dp"
-            android:hint="Last Name">
+            android:hint="@string/last_name">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="328dp"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:hint="@string/app_name"
+                tools:ignore="TouchTargetSizeCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <EditText
@@ -102,27 +110,31 @@
             android:layout_width="328dp"
             android:layout_height="56dp"
             android:layout_marginTop="191dp"
+            android:autofillHints=""
             android:ems="10"
-            android:hint="Password"
-            android:inputType="textPassword" />
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            tools:ignore="DuplicateSpeakableTextCheck" />
 
         <EditText
             android:id="@+id/editTextTextPassword2"
             android:layout_width="328dp"
             android:layout_height="56dp"
             android:layout_marginTop="255dp"
+            android:autofillHints=""
             android:ems="10"
-            android:hint="Confirm Password"
+            android:hint="@string/password"
             android:inputType="textPassword" />
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="24dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="296dp"
+            android:layout_marginStart="296dp"
             android:layout_marginTop="19dp"
             android:src="@android:drawable/ic_menu_call"
-            android:tint="#4CAF50" />
+            app:tint="#4CAF50"
+            android:contentDescription="@string/todo_" />
 
     </com.google.android.material.navigation.NavigationView>
 
@@ -132,7 +144,7 @@
         android:layout_height="56dp"
         android:backgroundTint="#03A9F4"
         android:fontFamily="@font/acme"
-        android:text="Register"
+        android:text="@string/register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -142,11 +154,13 @@
         android:id="@+id/imageView4"
         android:layout_width="147dp"
         android:layout_height="151dp"
+        android:contentDescription="@string/todo__"
         android:src="@drawable/whatsapp_image_2023_01_29_at_15_51_48"
         app:layout_constraintBottom_toTopOf="@+id/navigationView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/navigationView2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="ImageContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

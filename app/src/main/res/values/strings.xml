@@ -13,4 +13,15 @@
     <string name="enter_otp">enter otp</string>
     <string name="login1">LOGIN</string>
     <string name="are_you_a_robot">Are you a robot</string>
+    <string name="enter_phone_number">enter phone number</string>
+    <string name="first_name">First Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="create_account">Create Account</string>
+    <string name="password">Password</string>
+    <string name="confirm_password" />
+    <string name="todo_">TODO</string>
+    <string name="register">Register</string>
+    <string name="left"><![CDATA[<-]]></string>
+    <string name="todo__">TODO</string>
+    <string name="last_name" />
 </resources>
