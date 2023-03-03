@@ -47,44 +47,56 @@
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigationView3"
         android:layout_width="328dp"
-        android:layout_height="312dp"
+        android:layout_height="330dp"
+        android:layout_marginTop="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/navigationView2">
+        app:layout_constraintTop_toBottomOf="@+id/navigationView2"
+        app:layout_constraintVertical_bias="0.53">
 
         <TextView
             android:id="@+id/textView12"
-            android:layout_width="328dp"
+            android:layout_width="match_parent"
             android:layout_height="16dp"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/acme"
-            android:text="@string/phone_number"
+            android:text="@string/details"
             android:textSize="14sp"
             tools:ignore="TextSizeCheck" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="328dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+
+            android:alpha="0.87"
+            android:hint="@string/enter_phone_number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="TouchTargetSizeCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="328dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="6dp"
-            android:alpha="0.87"
-            android:hint="@string/enter_phone_number"
-            android:textColor="#D3FFFFFF"
-            android:textColorHint="#546E7A"
-            tools:ignore="TextContrastCheck" />
+            android:layout_height="60dp"
+            android:layout_marginTop="85dp"
+            android:hint="@string/first_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="320dp"
-            android:layout_height="56dp"
-            android:layout_marginTop="63dp"
-            android:hint="@string/first_name">
+            android:layout_width="328dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="145dp"
+            android:hint="@string/last_name">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -92,24 +104,12 @@
                 tools:ignore="TouchTargetSizeCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="328dp"
-            android:layout_height="56dp"
-            android:layout_marginTop="127dp"
-            android:hint="@string/last_name">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="328dp"
-                android:layout_height="wrap_content"
-                android:hint="@string/app_name"
-                tools:ignore="TouchTargetSizeCheck" />
-        </com.google.android.material.textfield.TextInputLayout>
-
         <EditText
             android:id="@+id/editTextTextPassword"
             android:layout_width="328dp"
-            android:layout_height="56dp"
-            android:layout_marginTop="191dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="205dp"
+
             android:autofillHints=""
             android:ems="10"
             android:hint="@string/password"
@@ -117,24 +117,16 @@
             tools:ignore="DuplicateSpeakableTextCheck" />
 
         <EditText
-            android:id="@+id/editTextTextPassword2"
-            android:layout_width="328dp"
-            android:layout_height="56dp"
-            android:layout_marginTop="255dp"
+            android:id="@+id/confirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="265dp"
+
             android:autofillHints=""
             android:ems="10"
-            android:hint="@string/password"
+            android:hint="@string/confirmPassword"
             android:inputType="textPassword" />
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="24dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="296dp"
-            android:layout_marginTop="19dp"
-            android:src="@android:drawable/ic_menu_call"
-            app:tint="#4CAF50"
-            android:contentDescription="@string/todo_" />
 
     </com.google.android.material.navigation.NavigationView>
 

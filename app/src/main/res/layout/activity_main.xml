@@ -153,6 +153,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="#FFEB3B"
         android:textColorHint="#FFEB3B"
+        android:onClick="getName"
         app:layout_constraintBottom_toBottomOf="@+id/idEdtOtp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.526"
