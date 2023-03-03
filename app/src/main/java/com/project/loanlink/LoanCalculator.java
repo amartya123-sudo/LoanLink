@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class LoanCalculator extends Customer {
     double avgInc, netInc, maxAmount;
+
+    LoanCalculator()
+    {
+        this("dd","name","mail",22,3,"hell");
+    }
     public LoanCalculator(String id, String name, String email, double salary, double expenses, String address) {
         super(id, name, email, salary, expenses, address);
     }
